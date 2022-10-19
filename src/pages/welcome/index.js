@@ -2,21 +2,21 @@ import React from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 
 import * as Animatable from 'react-native-animatable'
-import { useNavigation } from 'react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 
 export default function Welcome() {
   const navigation = useNavigation()
 
   return (
     <View style={styles.container}>
-      <view style={styles.containerLogo}>
+      <View style={styles.containerLogo}>
         <Animatable.Image
           animation="flipInY"
           source={require('../../assets/logo.png')}
           style={{ width: '100%' }}
           resizeMode="contain"
         />
-      </view>
+      </View>
       <Animatable.View
         delay={600}
         animation="fadeInUp"
